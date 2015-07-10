@@ -1,0 +1,11 @@
+Phase: UniversityPosition
+Input: Lookup
+Options: control = appelt
+ 
+
+Rule: Universityperson1
+(
+ {Lookup.majorType == academicpositions}   
+):personPosition 
+-->
+:personPosition.UniversityPosition = {rule = universityPosition1}

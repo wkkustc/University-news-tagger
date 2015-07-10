@@ -1,0 +1,13 @@
+Phase: University
+Input:  Token Lookup SpaceToken
+Options: control = appelt
+
+Rule: University4 
+
+(
+ (({Token.category == NNP}| {Token.category == NN}| {Token.category == NNS}| {Token.category == NNPS}) 
+{!SpaceToken.kind == "control"})[1,3]
+({Token.string == "University"}|{Token.string == "UNIVERSITY"})
+):orgName 
+-->
+:orgName.University = {rule = university4}

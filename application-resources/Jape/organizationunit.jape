@@ -1,0 +1,15 @@
+Phase: OrganizationUnit
+Input: Token Lookup SpaceToken 
+Options: control = appelt
+ 
+
+Rule: OrganizationUnit1 
+(
+ {Lookup.majorType == unit}  
+ {!SpaceToken.kind == "control"}
+ {Token.string == "of"}
+({!SpaceToken.kind == "control"})[0,3]
+ {Lookup.majorType ==disciplines} 
+):orgName2 
+-->
+:orgName2.OrganizationUnit = {rule = Organizationunit1}  

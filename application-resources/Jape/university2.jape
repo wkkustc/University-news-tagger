@@ -1,0 +1,11 @@
+Phase: University
+Input:  
+Options: control = appelt
+
+
+Rule: University2 
+(
+ {Lookup.majorType == "university"}
+):orgName 
+-->
+:orgName.University = {rule = university2}

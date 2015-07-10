@@ -1,0 +1,13 @@
+Phase: University
+Input: Token Lookup
+Options: control = appelt
+ 
+
+Rule: University1 
+(
+ ({Token.string == "University"}|{Token.string == "UNIVERSITY"}) 
+ ({Token.string == "of"}|{Token.string == "OF"}) 
+ ({Lookup.majorType == location})+ 
+):orgName 
+-->
+:orgName.University = {rule = university1}

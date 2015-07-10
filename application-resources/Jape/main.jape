@@ -1,0 +1,14 @@
+Multiphase: TestUniversity
+Phases:
+universityperson
+universityperson2
+university1 
+organizationunit
+university2
+university3
+university4
+universityposition
+belongtoRelation
+belongtoRelation2
+hasPositionRelation
+

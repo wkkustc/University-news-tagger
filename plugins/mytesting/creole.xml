@@ -1,0 +1,17 @@
+<!-- creole.xml mytesting -->
+<!--  Administrator, 5/2/2014 -->
+
+<!--
+This file just references the JAR file that contains the compiled resource.
+Configuration is contained in the @CreoleResource annotation on 
+module7.DocStats.
+-->
+
+<CREOLE-DIRECTORY>
+  <JAR SCAN="true">mytesting.jar</JAR>
+  <RESOURCE>
+  <NAME>Mytest</NAME>
+  <CLASS>module7.DocStats</CLASS>
+  <COMMENT>A SIMPLE TAGGER</COMMENT> 
+  </RESOURCE>
+</CREOLE-DIRECTORY>
